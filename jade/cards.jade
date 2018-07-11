@@ -1,0 +1,145 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+	-var topImg = "background-image: url(img/cardsTop-bg.jpg)";
+	-var pageTitle = "Топливные карты «Газпром нефть»";
+
+
+block title
+	title #{pageTitle}
+
+block content
+	.container_center
+			
+		// begin breadcrumb 
+		ul.breadcrumb
+			li
+				a(href="index.html") Главная
+			li
+				a(href="#") Карта АЗС
+			li
+				a(href="#" class="active") #{pageTitle}
+		// end breadcrumb 
+		
+		.section__title Топливные карты «Газпром нефть» для юридических лиц – это:
+
+		// begin grid_
+		.grid.grid__2.cardsGrid
+			div
+				img(src="img/card1.jpg", alt="")
+				p Надёжный поставщик топлива с мировым именем 
+			div
+				img(src="img/card2.jpg", alt="")
+				p Заправка по безналичному расчету высококачественным топливом на современных АЗС «Газпромнефть»
+			div
+				img(src="img/card3.jpg", alt="")
+				p Широкая партнёрская сеть автозаправок для межрегиональных перевозок
+			div
+				img(src="img/card4.jpg", alt="")
+				p Мгновенные оперaции по картам и данные по всем транзакциям онлайн
+		// end grid_
+
+		// begin cardForm 
+		.cardForm.cardForm_inverse
+			.cardForm__left
+				img(src="img/card-slider.png", alt="")
+			.cardForm__right
+				.cardForm__legend Остались вопросы? Закажите консультацию!
+				// begin .cardForm__grid
+				.grid.grid__3.cardForm__grid.form.form_inline
+					.form__row
+						input(type="text" placeholder="Имя")
+					.form__row
+						input(type="text" placeholder="Телефон")
+					.form__row
+						button.btn.btn_icon Заказать
+							i.icon.icon_mail
+				// end .cardForm__grid
+
+	.line_primary
+		.container_center
+			.section__title Почему выбирают Глобал-Карт?
+
+			// begin choiceGrid
+			.grid.grid__4.choiceGrid
+				div
+					.choiceGrid__img
+						img(src="img/choice1.png", alt="")
+					.choiceGrid__name Надежность
+					|Более, чем 10-летний опыт работы на рынке топливных карт. Мы знаем, что нужно нашим клиентам для комфортной успешной работы
+				div
+					.choiceGrid__img
+						img(src="img/choice2.png", alt="")
+					.choiceGrid__name Чистота
+					|Совершенно белая бухгалтерия и прозрачные условия договора. Работаем с НДС.
+				div
+					.choiceGrid__img
+						img(src="img/choice3.png", alt="")
+					.choiceGrid__name Выгода
+					|Мы говорим: «Да» скидкам и «Нет» скрытым платежам!
+				div
+					.choiceGrid__img
+						img(src="img/choice4.png", alt="")
+					.choiceGrid__name Стабильность
+					|Мы выстраиваем с нашими клиентами долгосрочные взаимовыгодные отношения. Получение разовой выгоды – не наш подход
+				div
+					.choiceGrid__img
+						img(src="img/choice5.png", alt="")
+					.choiceGrid__name Репутация
+					|Многие клиенты приходят по рекомендации от других довольных клиентов! А это многое значит
+				div
+					.choiceGrid__img
+						img(src="img/choice6.png", alt="")
+					.choiceGrid__name Гибкость
+					|Индивидуальный подход к особенностям бизнеса клиента при заключении договора и последующем сотрудничестве
+				div
+					.choiceGrid__img
+						img(src="img/choice7.png", alt="")
+					.choiceGrid__name Всё для клиента
+					|Не важно, сколько у Вас автомобилей, один или тысяча – нам важно мнение каждого клиента
+				div
+					.choiceGrid__img
+						img(src="img/choice8.png", alt="")
+					.choiceGrid__name Современные решения
+					|Удобный личный кабинет. Аналитическая отчетность по картам и данным мониторинга. Работа по ЭДО и т.д.
+			// end choiceGrid
+	
+	.container_center
+		.section__title.section__title_center Как оформить топливную карту «Газпром нефть» для организации
+
+		.steps
+			.steps__item
+				.steps__number 1
+				.steps__name Свяжитесь с нами
+				|удобным для Вас способом <br>(телефон, e-mail, онлайн-чат) <br>или <a href="">оставьте заявку</a> на <br>звонок менеджера
+			.steps__item
+				.steps__number 2
+				.steps__name Заключите договор
+				|у нас в офисе или <br>дистанционно
+			.steps__item
+				.steps__number 3
+				.steps__name Получите
+				|необходимое количество <br>топливных карт для своей <br>организации
+			.steps__item
+				.steps__number 4
+				.steps__name Пополните баланс
+				|начинайте заправляться и <br>экономить!
+
+
+		// begin cardForm 
+		.cardForm
+			.cardForm__left
+				img(src="img/card-slider.png", alt="")
+			.cardForm__right
+				.cardForm__legend Остались вопросы? Закажите консультацию!
+				// begin .cardForm__grid
+				.grid.grid__3.cardForm__grid.form.form_inline
+					.form__row
+						input(type="text" placeholder="Имя")
+					.form__row
+						input(type="text" placeholder="Телефон")
+					.form__row
+						button.btn.btn_icon Заказать
+							i.icon.icon_mail
+				// end .cardForm__grid

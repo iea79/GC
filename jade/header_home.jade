@@ -1,0 +1,23 @@
+// begin header 
+header.header
+	.container_center
+		.header__left
+			a(href="index.html").header__logo
+				img(src="img/logo.png")
+		
+		// begin .header__right 
+		.header__right
+			.header__phone
+				a(href="tel:+7 (495) 896 60 60") +7 (495) 896 60 60
+			.header__callback(data-toggle="modal" data-target="#callback") Заказать звонок
+		// end .header__right 
+		
+		// begin header__center 
+		.header__center
+			// begin navbar 
+			include nav.jade
+
+			// end navbar 
+		// end header__center 
+
+// end header 

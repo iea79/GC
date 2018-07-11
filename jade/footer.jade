@@ -1,5 +1,40 @@
 // begin footer 
 footer.footer
 	.container_center
-		div Footer 
-// end footer 
+		.footer__left © 2004-2018 Global-Card Ltd.
+		.footer__right
+			a(href="tel:+7 (495) 896 60 60") +7 (495) 896 60 60
+			a(href="#" data-toggle="modal" data-target="#callback") заказать звонок
+		.footer__center
+			a(href="#") Пользовательское соглашение
+
+// end footer
+
+//- // Button trigger modal callback 
+//- button(class="btn btn-primary btn-lg" data-toggle="modal" data-target="#callback") Click to open modal
+// begin Modal callback 
+.modal.fade.callback#callback
+	.modal-dialog
+		.modal-content
+			a(href="#" class="modal-close" data-dismiss="modal")
+			.form
+				fieldset
+					legend.form__title Закажите звонок
+					.form__sub Мы ответим в течение 15 минут
+					.form__row
+						input(type="text" placeholder="Имя")
+					.form__row
+						input(type="text" placeholder="Телефон")
+					.form__row
+						button.btn.btn_icon Заказать
+							i.icon.icon_mail
+					.form__row
+						input(type="checkbox" checked)
+						label Я даю согласие на обработку персональных данных
+
+// end modal callback 
+
+script(src="js/jquery.js")
+script(src="js/slick.min.js")
+script(src="js/modal.js")
+script(src="js/function.js")

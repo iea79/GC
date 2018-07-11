@@ -1,0 +1,113 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+	-var topImg = "background-image: url(img/newsTop-bg.jpg)";
+	-var pageTitle = "Новости";
+
+
+block title
+	title #{pageTitle}
+
+block content
+	.container_center
+		// begin breadcrumb 
+		ul.breadcrumb
+			li
+				a(href="index.html") Главная
+			li
+				a(href="#" class="active") Новости
+		// end breadcrumb 
+		
+		.news__list.grid
+			div
+				a(href="new.html").news__listItem
+					.news__listImg
+						img(src="img/news1.jpg", alt="")
+					.news__listDate 15 апреля 2018
+					.news__listName Технические работы
+					.news__listDescription 20 апреля 2018 года офис работать не будет, в связи с проведением профилактических работ программного обеспечения. Приносим свои извинения за доставленные неудобства.
+					.news__listMore Подробнее
+			div
+				a(href="new.html").news__listItem
+					.news__listImg
+						img(src="img/news2.jpg", alt="")
+					.news__listDate 15 апреля 2018
+					.news__listName Система спутникового мониторинга автотранспорта
+					.news__listDescription Для максимального контроля за расходом топлива и его сокращения предприятиям рекомендуется использовать сводную
+					.news__listMore Подробнее
+			div
+				a(href="new.html").news__listItem
+					.news__listImg
+						img(src="img/news3.jpg", alt="")
+					.news__listDate 15 апреля 2018
+					.news__listName Закон о тахографах 
+					.news__listDescription С 1 января 2016 года сотрудники ДПС, прошедшие подготовку по инспектированию ТС, оснащенных тахографами, начнут активней проверять транспорт именно на наличие
+					.news__listMore Подробнее
+			div
+				a(href="new.html").news__listItem
+					.news__listImg
+						img(src="img/news1.jpg", alt="")
+					.news__listDate 15 апреля 2018
+					.news__listName Технические работы
+					.news__listDescription 20 апреля 2018 года офис работать не будет, в связи с проведением профилактических работ программного обеспечения. Приносим свои извинения за доставленные неудобства.
+					.news__listMore Подробнее
+			div
+				a(href="new.html").news__listItem
+					.news__listImg
+						img(src="img/news2.jpg", alt="")
+					.news__listDate 15 апреля 2018
+					.news__listName Система спутникового мониторинга автотранспорта
+					.news__listDescription Для максимального контроля за расходом топлива и его сокращения предприятиям рекомендуется использовать сводную
+					.news__listMore Подробнее
+			div
+				a(href="new.html").news__listItem
+					.news__listImg
+						img(src="img/news3.jpg", alt="")
+					.news__listDate 15 апреля 2018
+					.news__listName Закон о тахографах 
+					.news__listDescription С 1 января 2016 года сотрудники ДПС, прошедшие подготовку по инспектированию ТС, оснащенных тахографами, начнут активней проверять транспорт именно на наличие
+					.news__listMore Подробнее
+			div
+				a(href="new.html").news__listItem
+					.news__listImg
+						img(src="img/news1.jpg", alt="")
+					.news__listDate 15 апреля 2018
+					.news__listName Технические работы
+					.news__listDescription 20 апреля 2018 года офис работать не будет, в связи с проведением профилактических работ программного обеспечения. Приносим свои извинения за доставленные неудобства.
+					.news__listMore Подробнее
+			div
+				a(href="new.html").news__listItem
+					.news__listImg
+						img(src="img/news2.jpg", alt="")
+					.news__listDate 15 апреля 2018
+					.news__listName Система спутникового мониторинга автотранспорта
+					.news__listDescription Для максимального контроля за расходом топлива и его сокращения предприятиям рекомендуется использовать сводную
+					.news__listMore Подробнее
+			div
+				a(href="new.html").news__listItem
+					.news__listImg
+						img(src="img/news3.jpg", alt="")
+					.news__listDate 15 апреля 2018
+					.news__listName Закон о тахографах 
+					.news__listDescription С 1 января 2016 года сотрудники ДПС, прошедшие подготовку по инспектированию ТС, оснащенных тахографами, начнут активней проверять транспорт именно на наличие
+					.news__listMore Подробнее
+		
+		// begin pagination 
+		ul.pagination
+			li.prev
+				a(href="#")
+			li.active
+				a(href="#") 1
+			li
+				a(href="#") 2
+			li
+				a(href="#") 3
+			li
+				a(href="#") ...
+			li
+				a(href="#") 6
+			li.next
+				a(href="#")
+		// end pagination 
+		

@@ -1,6 +1,122 @@
 extends template.jade
 
+block variables
+	-var pageClass = "home";
+
 block title
 	title Home
 
 block content
+	.home__slider
+		.home__sliderItem(style="background-image: url(img/slide1.png);")
+			.home__sliderContent
+				.home__sliderLeft
+					.home__sliderTitle Заправляйся выгодно
+					.home__sliderSub с топливной картой «Газпром нефть»
+					.home__sliderAction
+						button.btn Заказать карту
+				.home__sliderRight
+					img(src="img/card-slider.png", alt="")
+		.home__sliderItem(style="background-image: url(img/slide2.png);")
+			.home__sliderContent
+				.home__sliderLeft
+					.home__sliderTitle Качество топлива
+					.home__sliderSub от надёжного поставщика
+					.home__sliderAction
+						button.btn Заказать карту
+				.home__sliderRight
+					img(src="img/card-slider.png", alt="")
+		.home__sliderItem(style="background-image: url(img/slide3.png);")
+			.home__sliderContent
+				.home__sliderLeft
+					.home__sliderTitle Удобство и оперативность
+					.home__sliderSub в обслуживании по картам
+					.home__sliderAction
+						button.btn Заказать карту
+				.home__sliderRight
+					img(src="img/card-slider.png", alt="")
+
+	// begin news 
+	.container_center
+		.section__title Новости
+			a(href="#").section__titleLink Все новости
+		.news
+			.news__list.grid
+				div
+					a(href="#").news__listItem
+						.news__listImg
+							img(src="img/news1.jpg", alt="")
+						.news__listDate 15 апреля 2018
+						.news__listName Технические работы
+						.news__listDescription 20 апреля 2018 года офис работать не будет, в связи с проведением профилактических работ программного обеспечения. Приносим свои извинения за доставленные неудобства.
+						.news__listMore Подробнее
+				div
+					a(href="#").news__listItem
+						.news__listImg
+							img(src="img/news2.jpg", alt="")
+						.news__listDate 15 апреля 2018
+						.news__listName Система спутникового мониторинга автотранспорта
+						.news__listDescription Для максимального контроля за расходом топлива и его сокращения предприятиям рекомендуется использовать сводную
+						.news__listMore Подробнее
+				div
+					a(href="#").news__listItem
+						.news__listImg
+							img(src="img/news3.jpg", alt="")
+						.news__listDate 15 апреля 2018
+						.news__listName Закон о тахографах 
+						.news__listDescription С 1 января 2016 года сотрудники ДПС, прошедшие подготовку по инспектированию ТС, оснащенных тахографами, начнут активней проверять транспорт именно на наличие
+						.news__listMore Подробнее
+	// end news
+	.container_center
+		// begin map 
+		.map
+			.map__legend
+				.map__legendTitle Карта АЗС
+				.map__legendItem
+					.map__legendName Список АЗС общий
+					a(href="#" download) Скачать
+				.map__legendItem
+					.map__legendName АЗС  «Газпромнефть»
+					a(href="#" download) Скачать
+			.map__wrap
+				iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143749.08165686813!2d37.52896514791954!3d55.739749376047534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1531071948929" frameborder="0" style="border:0" allowfullscreen)
+		// end map 
+
+		.section__title О компании Global card
+		// begin grid_point__grid
+		.grid.grid__3.point__grid
+			div
+				.point__gridItem
+					.point__gridImg
+						img(src="img/clients.png", alt="")
+					|Компания ООО «Глобал-Карт» с 2004 года является надёжным партнером для коммерческих организаций с автотранспортом
+			div
+				.point__gridItem
+					.point__gridImg
+						img(src="img/computer.png", alt="")
+					|В нашем активе многолетний опыт в работе по оформлению и обслуживанию топливных карт, а также современные программные решения
+			div
+				.point__gridItem
+					.point__gridImg
+						img(src="img/satellite.png", alt="")
+					|На сегодняшний день мы также оказываем комплексное обслуживание клиентов по смежным направлениям: спутниковый мониторинг транспорта, тахографы.
+		// end grid_point__grid
+		
+		// begin cardForm 
+		.cardForm
+			.cardForm__left
+				img(src="img/card-slider.png", alt="")
+			.cardForm__right
+				.cardForm__legend Остались вопросы? Закажите консультацию!
+				// begin .cardForm__grid
+				.grid.grid__3.cardForm__grid.form.form_inline
+					.form__row
+						input(type="text" placeholder="Имя")
+					.form__row
+						input(type="text" placeholder="Телефон")
+					.form__row
+						button.btn.btn_icon Заказать
+							i.icon.icon_mail
+				// end .cardForm__grid
+				
+		// end cardForm 

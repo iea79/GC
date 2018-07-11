@@ -1,13 +1,13 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family:								"Century Gothic";
+$main_font_family:								"Ubuntu";
 $main_color:									#000;
 $main_line_height:								1.2;
 $main_font_size:								16px;
 
-$container_width:								970px;
+$container_width:								1170px;
 
-$footer_height: 								auto;
+$footer_height: 								120px;
 
 // Color collection for elements
 $color_primary:									#7b8287;
@@ -32,7 +32,7 @@ $el-colors: (
 
 /* Grid */
 /* ======================================================================== */
-$grid_padding:									20px;
+$grid_padding:									30px;
 
 
 /* Form */
@@ -40,10 +40,10 @@ $grid_padding:									20px;
 // Input variables
 
 // Input color
-$input_color:									$main_color;
+$input_color:									#696969;
 $input_bg_color:								#fff;
-$input_border_color:							#ddd;
-$input_placeholder_color:						#ddd;
+$input_border_color:							#ebebeb;
+$input_placeholder_color:						$input_color;
 
 // Input hover color
 $input_hover_color:								#fff;
@@ -70,10 +70,10 @@ $input_error_border_color:						red;
 $input_error_placeholder_color:					red;
 
 // Button variables
-$btn_default_bg_color:				 			#ddd;
-$btn_default_text_color:                        $main_color;
+$btn_default_bg_color:				 			#ff1653;
+$btn_default_text_color:                        #fff;
 $btn_contrast_text_color:                       $color_withe;
-$btn_default_bg_color_hover:					#ccc;
+$btn_default_bg_color_hover:					#fff;
 
 
 

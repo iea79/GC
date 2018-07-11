@@ -1,18 +1,25 @@
+block variables
+	-var pageClass = "";
+	-var topImg = "";
+	-var pageTitle = "";
+
 <!DOCTYPE html>
 html(lang="en")
-	
+
 	include head.jade
 
-	body
+	body(class=pageClass)
 		.wrapper
 			
-			include header.jade
+			if pageClass == "home"
+				include header_home.jade
+			else
+				include header.jade
 
 			// begin main__content
 			main.main__content
-				.container_center
-					
-					block content
+				
+				block content
 
 			// end main__content 
 

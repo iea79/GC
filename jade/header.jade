@@ -1,21 +1,28 @@
 // begin header 
-header.header
+header.header(style=topImg)
 	.container_center
+		.header__left
+			a(href="index.html").header__logo
+				img(src="img/logo.png")
+		
+		// begin .header__right 
+		.header__right
+			.header__phone
+				a(href="tel:+7 (495) 896 60 60") +7 (495) 896 60 60
+			.header__callback(data-toggle="modal" data-target="#callback") Заказать звонок
+		// end .header__right 
+		
+		// begin header__center 
+		.header__center
+			// begin navbar 
+			include nav.jade
 
-		a.logo
-			img(src="img/logo.png")
+			// end navbar 
+		// end header__center 
 
-		// begin navbar 
-
-		ul.navbar
-
-			li.navbar__item
-				a.navbar__link Item_1
-			li.navbar__item
-				a.navbar__link Item_2
-			li.navbar__item
-				a.navbar__link Item_3
-
-		// end navbar 
+	.container_center
+		.page__action
+			button.btn Заказать карту
+		h1.page__title #{pageTitle}
 
 // end header 

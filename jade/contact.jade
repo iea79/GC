@@ -1,0 +1,66 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+	-var topImg = "background-image: url(img/caontactTop-bg.jpg)";
+	-var pageTitle = "Контакты";
+
+
+block title
+	title #{pageTitle}
+
+block content
+	.container_center
+			
+		// begin breadcrumb 
+		ul.breadcrumb
+			li
+				a(href="index.html") Главная
+			li
+				a(href="#" class="active") #{pageTitle}
+		// end breadcrumb 
+		
+		.contact__left
+			.contact__list
+				.contact__listRow
+					.contact__listName Адрес: 
+					.contact__listDescr 117405, г. Москва, ул. Дорожная, д. 60Б (3-й этаж, офис 337).
+						a(href="#") Схема проезда
+				.contact__listRow
+					.contact__listName Время работы офиса: 
+					.contact__listDescr понедельник-четверг 10-00 - 17-30, пятница 10-00 - 16-30.
+				.contact__listRow
+					.contact__listName Телефон: 
+					.contact__listDescr +7 (495) 645-68-77, факс: +7 (495) 645-68-99.
+				.contact__listRow
+					.contact__listName Техническая поддержка:
+					.contact__listDescr +7 (495) 668-61-97 (сервис мониторинга).
+				.contact__listRow
+					.contact__listName E-mail: 
+					.contact__listDescr support@global-card.ru.
+
+			.contact__map
+				iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143749.08165686813!2d37.52896514791954!3d55.739749376047534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1531071948929" frameborder="0" style="border:0" allowfullscreen)
+
+		.contact__form
+			.form__title Напишите нам
+			.form__row
+				input(type="text" placeholder="Имя")
+			.form__row
+				input(type="text" placeholder="Телефон")
+			.form__row
+				input(type="text" placeholder="Компания")
+			.form__row
+				input(type="text" placeholder="E-mail")
+			.form__row
+				input(type="text" placeholder="Тема вопроса")
+			.form__row
+				textarea(placeholder="Вопрос")
+			.form__row
+				small Все поля обязательны к заполнению
+			.form__row
+				button.btn.btn_icon Отправить
+					i.icon.icon_mail
+			.form__row
+				input(type="checkbox" checked)
+				label Даю согласие на обработку персональных данных
