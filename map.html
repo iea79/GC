@@ -6,7 +6,7 @@
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css?0.2" rel="stylesheet"/>
   </head>
   <body>
     <div class="wrapper">
@@ -43,7 +43,7 @@
         </div>
         <div class="container_center">
           <div class="page__action">
-            <button class="btn">Заказать карту</button>
+            <button class="btn" data-toggle="modal" data-target="#orderCard">Заказать карту</button>
           </div>
           <h1 class="page__title">Карта АЗС</h1>
         </div>
@@ -105,9 +105,52 @@
       </div>
     </div>
     <!-- end modal callback -->
+    <!-- begin Modal callback -->
+    <div class="modal modal_lg fade callback" id="orderCard">
+      <div class="modal-dialog">
+        <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+          <div class="form">
+            <fieldset>
+              <legend class="form__title">Закажите карту</legend>
+              <div class="form__sub">Мы ответим в течение 15 минут</div>
+              <div class="grid grid__2">
+                <div>
+                  <div class="form__row">
+                    <input type="text" placeholder="Имя"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="form__row">
+                    <input type="text" placeholder="Фамилия"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="form__row">
+                    <input type="text" placeholder="Телефон"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="form__row">
+                    <input type="text" placeholder="E-mail"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form__row">
+                <button class="btn btn_icon">Заказать<i class="icon icon_mail"></i></button>
+              </div>
+              <div class="form__row">
+                <input type="checkbox" checked="checked"/>
+                <label>Я даю согласие на обработку персональных данных</label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal callback -->
     <script src="js/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/function.js"></script>
+    <script src="js/function.js?0.1"></script>
   </body>
 </html>

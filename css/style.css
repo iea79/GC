@@ -592,6 +592,12 @@ textarea {
   font-weight: 300;
   position: absolute; }
 
+.form .grid {
+  margin-left: -20px; }
+  .form .grid > div {
+    padding-left: 20px;
+    margin-bottom: 20px; }
+
 @media (max-width: 767px) {
   .form_inline .form__row {
     width: 100%;
@@ -795,6 +801,12 @@ input[type=checkbox]:disabled:indeterminate:before {
   .grid__4 > div {
     width: 50%; } }
 
+@media (max-width: 767px) {
+  .grid__4 > div {
+    width: 100%; }
+  .grid__2 > div {
+    width: 100%; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -929,8 +941,8 @@ input[type=checkbox]:disabled:indeterminate:before {
     max-width: 320px;
     display: inline-block;
     vertical-align: middle; }
-    .modal-dialog_lg {
-      max-width: 660px; }
+  .modal_lg .modal-dialog {
+    max-width: 660px; }
   .modal-content {
     text-align: left;
     position: relative;
@@ -1599,6 +1611,10 @@ input[type=checkbox]:disabled:indeterminate:before {
     font-size: 50px; } }
 
 @media (max-width: 767px) {
+  .home .header__phone a {
+    color: #fff; }
+  .home .header__callback {
+    color: #fff; }
   .home__slider {
     margin-bottom: 80px; }
     .home__sliderItem {
@@ -1693,6 +1709,10 @@ input[type=checkbox]:disabled:indeterminate:before {
   .line_primary .section__title {
     color: #fff;
     margin-bottom: 56px; }
+  @media (max-width: 767px) {
+    .line_primary {
+      margin: 60px 0;
+      padding: 50px 0 20px; } }
 
 .choiceGrid {
   line-height: 1.2;
@@ -1803,7 +1823,8 @@ a[download] {
     line-height: 1.45; }
   .point__gridImg {
     min-height: 53px;
-    margin-bottom: 19px; }
+    margin-bottom: 19px;
+    text-align: center; }
   @media (max-width: 767px) {
     .point__grid {
       margin-bottom: 50px; }
@@ -1856,7 +1877,15 @@ a[download] {
       padding-left: 0; } }
   @media (max-width: 767px) {
     .cardForm {
-      padding: 20px; }
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      margin-left: -15px;
+      margin-right: -15px;
+      border-radius: 0;
+      padding: 20px;
+      margin-bottom: 0; }
       .cardForm__legend {
         font-size: 18px; } }
 
@@ -2053,10 +2082,12 @@ a[download] {
     font-weight: 700;
     margin-bottom: 15px; }
   @media (max-width: 767px) {
-    .steps__item {
-      width: 100%; }
-      .steps__item:before {
-        display: none; } }
+    .steps {
+      margin-bottom: 30px; }
+      .steps__item {
+        width: 100%; }
+        .steps__item:before {
+          display: none; } }
 
 /* Footer
  ----------------------------------------------------------------------------- */

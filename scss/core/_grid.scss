@@ -98,3 +98,17 @@
 		}
 	}
 }
+@media (max-width: 767px) {
+	.grid {
+		&__4 {
+			>div {
+				width: 100%;
+			}
+		}
+		&__2 {
+			>div {
+				width: 100%;
+			}
+		}
+	}
+}

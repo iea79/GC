@@ -67,8 +67,12 @@
         max-width: 320px;
         display: inline-block;
         vertical-align: middle;
-        &_lg {
-            max-width: 660px;
+    }
+    &_lg {
+        .modal {
+            &-dialog {
+                max-width: 660px;
+            }
         }
     }
 

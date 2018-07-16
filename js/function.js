@@ -75,7 +75,11 @@ $(document).ready(function() {
    	$('.home__slider').slick({
    		arrows: false,
    		dots: true,
-   		fade: true
+   		fade: true,
+   		autoplay: true,
+   		autoplaySpeed: 5000,
+   		pauseOnHover: false,
+   		pauseOnDotsHover: true
    	});
 
    	$('.navbar__toggle').on('click', function() {
